@@ -12,7 +12,7 @@ public class OperatorTableCalculator {
         double difference = first - second;
         double product = first * second;
 
-        String quotientText = canDivide ? String.valueOf(first/second) : "연산 불가";
+        String quotientText = canDivide ? String.valueOf(first / second) : "연산 불가";
         String remainderText = canDivide ? String.valueOf(first%second) : "연산 불가";
         boolean sameValues = first == second;
         boolean firstIsGreater = first > second;
