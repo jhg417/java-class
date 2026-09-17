@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 //TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
@@ -5,12 +6,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.print("나이: ");
-        int age = scanner.nextInt();
-        System.out.print("이름: ");
-        String name = scanner.nextLine();
-// 남아 있던 줄바꿈을 읽어 name이 빈 문자열
-        System.out.println(name);
+        int[] original = {10, 20, 30};
+        int[] longer = Arrays.copyOf(original, 5);
+        int[] shorter = Arrays.copyOf(original, 2);
+// longer: [10, 20, 30, 0, 0]
+// shorter: [10, 20]
     }
 }
